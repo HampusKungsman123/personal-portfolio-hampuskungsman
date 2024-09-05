@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+@import url("https://cdn-uicons.flaticon.com/2.5.1/uicons-bold-rounded/css/uicons-bold-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "SUSE", sans-serif;
+  color: var(--text-color);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+:root {
+  --primary-color: #001d3d;
+  --secondary-color: #303030;
+  --text-color: #f9f6ee;
+  --site-color: #1b1b1b;
+}
+
+body {
+  background-color: var(--site-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+footer {
+  display: flex;
+  position: sticky;
+  background-color: var(--site-color);
+  bottom: 0;
+  padding: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background-color: var(--secondary-color);
+  max-width: 800px;
+  border-radius: 6px;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+li {
+  padding: 5px;
+  margin-left: 20px;
+}
+
+#contact {
+  display: flex;
+}
+
+#contact a {
+  text-decoration: none;
+  padding: 5px;
+  padding-bottom: 0;
+  padding-top: 2px;
+}

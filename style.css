@@ -8,11 +8,18 @@
 }
 
 body {
-  background-color: black;
+  background-color: #1b1b1b;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  padding: 20px;
+}
+
+.skriv {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
 }
 
 .skriv h1 {
@@ -24,11 +31,23 @@ body {
   letter-spacing: 0.15em;
   animation: skriva 3.5s steps(40, end);
   animation-fill-mode: forwards;
+  text-align: center;
 }
 
-.skriv .cursor {
+.cursor {
   border-right: 0.15em solid orange;
   animation: blink 0.75s step-end infinite;
+}
+
+@media (max-width: 480px) {
+  .skriv h1 {
+    font-size: 1.2rem; /* Even smaller font size for small phones */
+    letter-spacing: 0.1em; /* Adjust letter-spacing for smaller text */
+  }
+
+  .skriv .cursor {
+    border-right-width: 0.1em; /* Slightly thinner cursor for smaller screens */
+  }
 }
 
 @keyframes skriva {
